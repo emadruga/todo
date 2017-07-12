@@ -9,7 +9,7 @@
 </ion-header>
 <ion-content>
   <ion-list>
-    <button ion-item (click)="editTodo(todo)" *ngFor="let todo of todos">
+    <button ion-item (click)="editTodo(todo)" *ngFor="let todo of dataService.todos">
       {{todo.title}}
     </button>
   </ion-list>
