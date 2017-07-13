@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>EditTodo</ion-title>
   </ion-navbar>
 
@@ -24,6 +24,8 @@
       <ion-input [(ngModel)]="todo.description" type="text"></ion-input>
     </ion-item>
   </ion-list>
-
-  <button ion-button full (click)="save()">Save</button>
 </ion-content>
+
+<ion-footer>
+  <button ion-button full color="light" (click)="save()">Save</button>
+</ion-footer>
